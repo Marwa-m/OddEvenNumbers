@@ -15,19 +15,5 @@ void PrintNumbers(string title, IEnumerable<int> numbers)
     Console.Write("]");
     Console.WriteLine();
 }
-bool IsEven(int number)
-{
-    if (number % 2 == 0)
-        return true;
-    else
-        return false;
-
-}
-bool IsOdd(int number)
-{
-    if (number % 2 != 0)
-        return true;
-    else
-        return false;
-
-}
+bool IsEven(int number) => (number % 2 == 0);
+bool IsOdd(int number) => !IsEven(number);
